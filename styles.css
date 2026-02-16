@@ -1,0 +1,28 @@
+html{background:rgb(250, 230, 188)}
+
+h1{color:sienna}
+
+.AddingClass{color:cadetblue;font-size: 24px; 
+    text-align: center; margin: 0;}
+
+
+.UnOrderedList{font-size: 15px; text-align: left; margin: 0;}
+
+
+.triangle-right {
+  position: relative;        /* Keeps the arrow anchored to this paragraph */
+  padding-left: 25px;        /* Creates space for the arrow so words don't wrap */
+  line-height: 1.3;          /* Adds breathing room between lines */
+}
+.triangle-right::before {
+  content: "";
+  position: absolute;        /* Forces arrow out of the text flow */
+  left: 0;                   /* Aligns arrow to the far left padding area */
+  top: 6px;                  /* Adjusts vertical alignment with the first word */  
+  /* The Triangle Shape */
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid black; 
+}
